@@ -8,21 +8,15 @@
 
 ### 使用前须知
 #### 软件开放源码(发行协议:GPL-3.0)，个人用户可免费学习使用，但禁止任何单位或个人修改软件后再次发行的行为。商业使用需得到我司授权，否则我们将通过法律途径解决侵权问题。
-#### 我们欢迎对开源技术感兴趣的朋友一起加入到我们项目中来完善系统功能并为客户提供服务。欢迎扫描下方二维码添加技术交流群<br /><br />
-   ![微信群](https://gitee.com/himool/erp/raw/master/img/%E5%BE%AE%E4%BF%A1%E7%BE%A4.png)
 
 ### 公司介绍
-盒木科技是一家专注于**智慧工厂和仓储系统**研发的科技创新企业。目前已发布[盒木MES制造执行系统](https://www.himool.com/product/mes/)，[盒木WMS仓库管理系统](https://www.himool.com/product/wms/)，[盒木WCS仓库控制系统](https://www.himool.com/product/wcs/)及[盒木ERP企业管理系统](https://www.himool.com/product/erp/)。其中ERP含社区版和企业版：
+盒木科技(https://www.himool.com)是一家专注于**智慧工厂和仓储系统**研发的科技创新企业。目前已发布[盒木MES制造执行系统](https://www.himool.com/product/mes/)，[盒木WMS仓库管理系统](https://www.himool.com/product/wms/)，[盒木WCS仓库控制系统](https://www.himool.com/product/wcs/)及[盒木ERP企业管理系统](https://www.himool.com/product/erp/)。其中ERP含社区版和企业版：
 * **社区版**为开源进销存系统，包含采购，销售，库存，财务等模块。适用于贸易类企业。
 * **企业版**为智慧工厂管理系统，除了社区版功能外，还增加了生产管理，质检管理，物料管控及追溯，实时看板，移动端App等实用功能。
 
 #### ERP的服务模式
 * 客户定制服务。无论社区版还是企业版，针对有定制需求的客户我们将提供定制开发服务。
 * 社区版商业授权。开源社区需要您的支持以得以发展，如果您希望将我们的系统或源码二次开发后出售给其他客户，请先联系我们获得商业授权，否则将承担法律风险。
-
-#### 欢迎有软件需求的客户或意向成为代理（[代理条件](https://www.himool.com/partner)）的公司/个人扫描下方客户经理二维码。个人学习请勿添加！！！<br />
-添加微信时请备注单位/个人称呼+目的（如代理合作，客户咨询等），否则不予通过。<br /><br />
-![微信](https://gitee.com/himool/erp/raw/master/img/%E5%BE%AE%E4%BF%A1.png)
 
 ### 项目介绍
 #### 该系统前后端分离，api使用restful协议，方便二次开发，后端使用Python，Django，DRF等技术，前端代码使用AntD进行构建，包含采购管理，销售管理，库存管理等业务管理流程。移动端使用Uniapp，包含产品标签打印，出入库扫码等功能。
