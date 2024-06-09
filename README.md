@@ -10,7 +10,7 @@
 #### 软件开放源码(发行协议:GPL-3.0)，个人用户可免费学习使用，但禁止任何单位或个人修改软件后再次发行的行为。商业使用需得到我司授权，否则我们将通过法律途径解决侵权问题。
 
 ### 公司介绍
-盒木科技(https://www.himool.com)是一家专注于**智慧工厂和仓储系统**研发的科技创新企业。目前已发布[盒木MES制造执行系统](https://www.himool.com/product/mes/)，[盒木WMS仓库管理系统](https://www.himool.com/product/wms/)，[盒木WCS仓库控制系统](https://www.himool.com/product/wcs/)及[盒木ERP企业管理系统](https://www.himool.com/product/erp/)。其中ERP含社区版和企业版：
+[盒木科技](https://www.himool.com)是一家专注于**智慧工厂和仓储系统**研发的科技创新企业。目前已发布[盒木MES制造执行系统](https://www.himool.com/product/mes/)，[盒木WMS仓库管理系统](https://www.himool.com/product/wms/)，[盒木WCS仓库控制系统](https://www.himool.com/product/wcs/)及[盒木ERP企业管理系统](https://www.himool.com/product/erp/)。其中ERP含社区版和企业版：
 * **社区版**为开源进销存系统，包含采购，销售，库存，财务等模块。适用于贸易类企业。
 * **企业版**为智慧工厂管理系统，除了社区版功能外，还增加了生产管理，质检管理，物料管控及追溯，实时看板，移动端App等实用功能。
 
