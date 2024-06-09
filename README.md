@@ -104,8 +104,6 @@
 
 ### Company Introduction
 Himool Technology is focus on supply chain digitalization. All the products are developed by ourselves, now we have published [Himool MES](https://www.himool.com/product/mes/), [Himool WMS](https://www.himool.com/wms/), [Himool WCS](https://www.himool.com/wcs/) and [Himool ERP](https://www.himool.com/erp/).  ERP is free，only charge fee to customized demands and agency who requests authorit, we're aiming to be the leader of open-source ERP providers, we offer professional ERP service to our customers.<br />
-#### If you're interested in join as an agent([Conditions to be an agent](https://www.himool.com/partner)), please scan below wechat QR code, call me +86 18761717855 or email me.<br />
-![Wechat](https://gitee.com/himool/erp/raw/master/img/%E5%BE%AE%E4%BF%A1.png)
 
 ### Project Introduction
 #### Himool ERP contains core processes like master data, purchasing, sales, inbound, outbound and payment.
