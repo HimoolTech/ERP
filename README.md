@@ -108,7 +108,7 @@ Himool Technology is focus on supply chain digitalization. All the products are 
 ### Project Introduction
 #### Himool ERP contains core processes like master data, purchasing, sales, inbound, outbound and payment.
 * Gitee地址: [Gitee](https://gitee.com/himool/erp)
-* Github地址: [Github](https://github.com/himool/HimoolERP)
+* Github地址: [Github](https://github.com/Himool-SmartManufacturing/HimoolERP)
 
 ### Devlopment Environment
 * Python version V3.9+
