@@ -10,8 +10,8 @@
 #### 软件开放源码(发行协议:GPL-3.0)，个人用户可免费学习使用，但禁止任何单位或个人修改软件后再次发行的行为。商业使用需得到我司授权，否则我们将通过法律途径解决侵权问题。
 
 ### 公司介绍
-[盒木科技](https://www.himool.com)是一家专注于**智慧工厂和仓储系统**研发的科技创新企业。目前已发布[盒木MES制造执行系统](https://www.himool.com/product/mes/)，[盒木WMS仓库管理系统](https://www.himool.com/product/wms/)，[盒木WCS仓库控制系统](https://www.himool.com/product/wcs/)及[盒木ERP企业管理系统](https://www.himool.com/product/erp/)。其中ERP含社区版和企业版：
-* **社区版**为开源进销存系统，包含采购，销售，库存，财务等模块。适用于贸易类企业。
+[盒木科技](https://www.himool.com)是一家专注于**智能制造**系统研发的科技创新企业。目前已发布[盒木MES制造执行系统](https://www.himool.com/product/mes/)，[盒木WMS仓库管理系统](https://www.himool.com/product/wms/)，[盒木WCS仓库控制系统](https://www.himool.com/product/wcs/), [盒木IoT物联网数据采集平台](https://www.himool.com/product/iot/)及盒木ERP企业管理系统。其中ERP含社区版和企业版：
+* **社区版**为开源进销存系统，包含采购，销售，库存，财务等模块。
 * **企业版**为智慧工厂管理系统，除了社区版功能外，还增加了生产管理，质检管理，物料管控及追溯，实时看板，移动端App等实用功能。
 
 #### ERP的服务模式
@@ -21,7 +21,7 @@
 ### 项目介绍
 #### 该系统前后端分离，api使用restful协议，方便二次开发，后端使用Python，Django，DRF等技术，前端代码使用AntD进行构建，包含采购管理，销售管理，库存管理等业务管理流程。移动端使用Uniapp，包含产品标签打印，出入库扫码等功能。
 * Gitee地址: [Gitee](https://gitee.com/himool/erp)
-* Github地址: [Github](https://github.com/himool/HimoolERP)
+* Github地址: [Github](https://github.com/Himool-SmartManufacturing/HimoolERP)
 
 ### 项目背景
 #### 目前市面上没有一款采用流行的前后端技术易用开源的ERP系统。有不少朋友也跟我们反应实施了ERP系统但是仍然会面临许多问题，尤其二开的费用高昂。于是我们总结了这些年ERP系统开发的经验，设计了这款开源的盒木ERP系统，支持高自由度的开发，来支持企业的自定义需求。
