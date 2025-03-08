@@ -1,0 +1,33 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="19">
+            <item index="0" class="java.lang.String" itemvalue="requests" />
+            <item index="1" class="java.lang.String" itemvalue="pyotp" />
+            <item index="2" class="java.lang.String" itemvalue="pyarrow" />
+            <item index="3" class="java.lang.String" itemvalue="PyJWT" />
+            <item index="4" class="java.lang.String" itemvalue="six" />
+            <item index="5" class="java.lang.String" itemvalue="botocore" />
+            <item index="6" class="java.lang.String" itemvalue="dbt-core" />
+            <item index="7" class="java.lang.String" itemvalue="deepdiff" />
+            <item index="8" class="java.lang.String" itemvalue="click" />
+            <item index="9" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="10" class="java.lang.String" itemvalue="JPype1" />
+            <item index="11" class="java.lang.String" itemvalue="pandas" />
+            <item index="12" class="java.lang.String" itemvalue="boto3" />
+            <item index="13" class="java.lang.String" itemvalue="volcengine" />
+            <item index="14" class="java.lang.String" itemvalue="faker" />
+            <item index="15" class="java.lang.String" itemvalue="tenacity" />
+            <item index="16" class="java.lang.String" itemvalue="lxml" />
+            <item index="17" class="java.lang.String" itemvalue="isort" />
+            <item index="18" class="java.lang.String" itemvalue="JayDeBeApi" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
