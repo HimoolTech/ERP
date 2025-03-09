@@ -16,6 +16,8 @@ from apps.stock_in.models import *
 from apps.stock_out.models import *
 from apps.goods.models import *
 from apps.data.models import *
+import datetime
+import pendulum
 
 
 class PurchaseReportViewSet(BaseViewSet):
@@ -186,13 +188,41 @@ class SalesTrendViewSet(BaseViewSet, ListModelMixin):
 
     @extend_schema(parameters=[SalesTrendParameter], responses={200: SalesTrendResponse})
     def list(self, request, *args, **kwargs):
-        queryset = self.filter_queryset(self.get_queryset())
-        queryset = queryset.select_related('warehouse')
-        queryset = queryset.extra(select={'date': connection.ops.date_trunc_sql('day', 'create_time')})
-        queryset = queryset.values('warehouse', 'date').annotate(
-            warehouse_number=F('warehouse__number'), warehouse_name=F('warehouse__name'),
-            total_sales_amount=Coalesce(Sum('total_amount'), Value(0, output_field=AmountField())),
-        )
+        # 验证日期参数
+        serializer = SalesTrendParameter(data=request.query_params)
+        serializer.is_valid(raise_exception=True)
+        
+        # 检查日期是否在有效范围内
+        start_date = serializer.validated_data.get('start_date')
+        end_date = serializer.validated_data.get('end_date')
+        today = datetime.date.today()
+        
+        # 如果结束日期超过今天，则使用今天作为结束日期
+        if end_date > today:
+            end_date = today
+            
+        # 如果开始日期超过今天，则返回空数据
+        if start_date > today:
+            return Response(data=[], status=status.HTTP_200_OK)
+            
+        # 更新请求参数
+        request.query_params._mutable = True
+        request.query_params['start_date'] = start_date.isoformat()
+        request.query_params['end_date'] = end_date.isoformat()
+        request.query_params._mutable = False
+        
+        try:
+            queryset = self.filter_queryset(self.get_queryset())
+            queryset = queryset.select_related('warehouse')
+            queryset = queryset.extra(select={'date': connection.ops.date_trunc_sql('day', 'create_time')})
+            queryset = queryset.values('warehouse', 'date').annotate(
+                warehouse_number=F('warehouse__number'), warehouse_name=F('warehouse__name'),
+                total_sales_amount=Coalesce(Sum('total_amount'), Value(0, output_field=AmountField())),
+            )
+            return Response(data=queryset, status=status.HTTP_200_OK)
+        except Exception as e:
+            # 如果查询出错，返回空数据
+            return Response(data=[], status=status.HTTP_200_OK)
 
         return Response(data=queryset, status=status.HTTP_200_OK)
 
