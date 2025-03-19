@@ -3,11 +3,10 @@ from rest_framework_simplejwt.exceptions import TokenError
 from rest_framework_simplejwt.tokens import RefreshToken
 from extensions.common.base import *
 from extensions.common.schema import *
-from extensions.common.schema import *
-from extensions.common.base import *
 from extensions.permissions import *
 from extensions.exceptions import *
 from extensions.viewsets import *
+from extensions.paginations import LimitedPagination
 from apps.system.serializers import *
 from apps.system.schemas import *
 from apps.system.models import *
@@ -18,7 +17,6 @@ from scripts.create_user import create_user
 from scripts.send_phone_code import send_phone_code
 from configs.django import CRM_URL
 import requests
-
 
 class PermissionGroupViewSet(BaseViewSet, ListModelMixin):
     """权限分组"""
@@ -102,7 +100,9 @@ class UserViewSet(ModelViewSet):
     filterset_fields = ['sex', 'is_active']
     search_fields = ['username', 'name', 'phone', 'email']
     ordering_fields = ['id', 'username', 'name']
+    ordering = ['-id']  # 默认按id倒序排列
     queryset = User.objects.all()
+    pagination_class = LimitedPagination
 
     def perform_destroy(self, instance):
         if instance.is_manager:
