@@ -23,12 +23,12 @@
       </a-col>
     </a-row>
 
-    <div style="text-align: center; width: 100%; margin-top: 24px">
+    <!-- <div style="text-align: center; width: 100%; margin-top: 24px">
       <div>试用，购买或问题咨询请扫描下方客户经理二维码</div>
       <div>
         <img :src="wechatCustomerService" width="100" style="margin-top: 8px" />
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -40,7 +40,6 @@ export default {
   name: "Login",
   data() {
     return {
-      wechatCustomerService: require("@/assets/wechat_customer_service.png"),
       isLoading: false,
       form: {
         number: "",

@@ -52,7 +52,7 @@
 1. 启动后端服务
     python3 manage.py runserver
 2. 启动前端服务
-    npx vue-cli-service serve
+    npm run serve
 3. 浏览器访问前端地址
 
 ### 服务器运行
