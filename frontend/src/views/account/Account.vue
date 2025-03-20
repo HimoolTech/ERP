@@ -94,8 +94,8 @@ export default {
     return {
       columns,
       permissions,
-      searchForm: { search: "", page: 1, ordering: undefined, page_size: 16 },
-      pagination: { current: 1, total: 0, pageSize: 16 },
+      searchForm: { search: "", page: 1, ordering: undefined, page_size: 10 },
+      pagination: { current: 1, total: 0, pageSize: 10, showTotal: total => `共 ${total} 条` },
       loading: false,
       items: [],
       roleItems: [],

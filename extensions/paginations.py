@@ -6,8 +6,8 @@ class BasePagination(PageNumberPagination):
 
 
 class LimitedPagination(BasePagination):
-    max_page_size = 16
-    page_size = 16
+    max_page_size = 999999
+    page_size = 10
 
 
 class InfinitePagination(BasePagination):
