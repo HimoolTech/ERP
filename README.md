@@ -28,10 +28,10 @@
 
 ### 硬件要求及开发环境
 * 移动端打印功能需指定型号PDA，请联系作者购买
-* Python版本为V3.9+
-* Django版本为V3.2+
-* Django-rest-framework版本为V3.12+
-* Vue版本为2.6+
+* Python版本为V3.9
+* Django版本为V3.2
+* Django-rest-framework版本为V3.12
+* Vue版本为2.6
 * PDA端使用Uniapp
 * 数据库为MySQL
 * 前端组件为AntD
@@ -108,13 +108,13 @@ Himool Technology is focus on supply chain digitalization. All the products are 
 ### Project Introduction
 #### Himool ERP contains core processes like master data, purchasing, sales, inbound, outbound and payment.
 * Gitee地址: [Gitee](https://gitee.com/himool/erp)
-* Github地址: [Github](https://github.com/Himool-SmartManufacturing/HimoolERP)
+* Github地址: [Github](https://github.com/HimoolERP/ERP)
 
 ### Devlopment Environment
-* Python version V3.9+
-* Django version V3.2+
-* Djangorestframework version V3.12+
-* Vue version 2.6+
+* Python version V3.9
+* Django version V3.2
+* Djangorestframework version V3.12
+* Vue version 2.6
 * Uniapp for mobile device
 * MySQL for database
 * AntD for frontend UI element
